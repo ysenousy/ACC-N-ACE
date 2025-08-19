@@ -252,7 +252,7 @@ Together with full automation, Human-in-the-Loop (HITL) interfaces enable expert
 
 Lastly, Benchmarking and Evaluation makes tools and frameworks robust in methodological terms via reproducible measures \cite{kowald2024, ghimire2024}, and Tool Deployment brings applicability to the research prototypes by rendering them operational and adapting workflows in the AEC industry \cite{ghimire2024}.
 
-The conceptual framework pipeline is complemented by new trends that provide an opportunity to extend the arguments through reasoning especially with applications of unstructured legal data and an opportunity to customize arguments based on queries to the data and adapt to the setting \textbf{LLMs} \cite{kampelopoulos2025}.
+The conceptual framework pipeline is complemented by new trends that provide an opportunity to extend the arguments through reasoning especially with applications of unstructured legal data and an opportunity to customize arguments based on queries to the data and adapt to the setting LLMs \cite{kampelopoulos2025}.
 
 The ten thematic areas delineated in Table~\ref{tab:acc_themes}, the pipeline may be considered as a conceptual framework which might have been applied to the literature study, as well as a road map or a guide on how the future study of enhanced ACC systems will take.
 
@@ -335,7 +335,7 @@ In the case of a file that does not include an embedded text layer (e.g. scanned
 scanned the pages as pictures. 
 Afterward, tables are retrieved using \texttt{pdfplumber}, and embedded images are extracted via \texttt{PyMuPDF}. 
 OCR is then performed on these images after basic preprocessing (grayscale conversion and thresholding) to recover any text embedded within figures. 
-The extracted components; main text $M_{i}$, tables $B_{i}$, image references $I_{i}$, and OCR text $O_{i}$; are cleaned to remove noise and merged into a structured output file containing four labelled sections: \textbf{TEXT}, \textbf{TABLES}, \textbf{IMAGES}, and \textbf{OCR TEXT}. 
+The extracted components; main text $M_{i}$, tables $B_{i}$, image references $I_{i}$, and OCR text $O_{i}$; are cleaned to remove noise and merged into a structured output file containing four labelled sections: TEXT, TABLES, IMAGES, and OCR TEXT. 
 This final text representation serves as the foundation for downstream semantic analysis and ranking. 
 
 \begin{algorithm}[H]
@@ -436,7 +436,7 @@ and provides the evidence sentences that justify each assignment,
 thereby supporting subsequent quantitative synthesis and qualitative review.
 
 \subsection{Findings and Pre-Thematic Synthesis}
-Before proceeding to the entire thematic synthesis, we should demonstrate how the ranking matrix used to drive our analysis. This matrix cross-tabulates 89 peer-reviewed papers with ten conceptual themes that together conceptualise ACC after 10 review papers were excluded. Table \ref{tab:paper_theme_scores} shows a sample version of the matrix, showing only similarity scores of five exemplar themes. The entire matrix, in addition and all supporting project files, is found in the online \texttt{GitHub} repository (short-url-link). This section is presented with the sole purpose to illustrate the scoring scheme and thematic labelling can be found in the full matrix; the complete observation of all ten themes is provided in the following sections.
+Before proceeding to the entire thematic synthesis, we should demonstrate how the ranking matrix used to drive our analysis. This matrix cross-tabulates 89 peer-reviewed papers with ten conceptual themes that together conceptualise ACC after 10 review papers were excluded. Table \ref{tab:paper_theme_scores} shows a sample version of the matrix, showing only similarity scores of five exemplar themes. The entire matrix, in addition and all supporting project files, is found in the online \texttt{GitHub} repository (\url{https://github.com/ysenousy/ACC-N-ACE}). This section is presented with the sole purpose to illustrate the scoring scheme and thematic labelling can be found in the full matrix; the complete observation of all ten themes is provided in the following sections.
 
 \begin{table}[htbp]
 \centering
@@ -487,7 +487,6 @@ Figure \ref{fig:heatmap} shows two latent research clusters that are aligned on 
 \end{figure}
 
 \subsubsection{Peaks, Plateaus and Performance Bottleneck}
-
 Figure \ref{fig:average_score_per_theme} reveals that the difference among the themes is limited by the rule representation and reasoning which has the highest score 0.66 and integration of ontologies being its immediate neighbour. In these tops, one finds a midfield level: six themes have been clustered between 0.56 and 0.60, demonstrating homogenous incrementalism instead of the differentiated progress. Such plateau is the expression of the fact that it is dependent on other infrastructures (like a shared reliance on IFC schemas or SHACL validators) and can only diversify their themes to a limited degree. Multimodal Information Extraction has not seen a large scale growth at the bottom (0.54), and Tool Development and Real-World Application have not grown much at all and skewed, which implies that the interest is beginning to rise, though not in any coordinated manner.
 
 \begin{figure}[H]
@@ -521,6 +520,7 @@ Figure \ref{fig:highest_ranking_papers} shows the difference in the thematic dev
 \end{figure}
 
 \section{Thematic Synthesis}
+\label{Thematic Synthesis}
 To support this thematic synthesis, we constructed a summary matrix of the selected literature, comprising the top-ranked papers drawn from 89 peer-reviewed studies. Notable attributes provided in this matrix are the names of the authors, goal, method, tools, domain, contribution, mapping of themes, and the binary indicator of the theme relevance (Yes/No) (See \ref{lab:appB}). The study started with a systematic filtering and close reading of 33 papers. Three of these did not fit with the initially scoring themes \cite{chen2024b, ren2024, wu2025}. Rather than excluding them, we examined them thematically and updated manually with the help of domain experts to make them consistent and relevant.
 
 The following subsections examine the ten identified themes. In every theme, top ranking papers in the themes are critically examined. In each of these papers we give a clear summary and a sharp evaluation, including citation, method, tools. The conclusion of each theme points to gaps in knowledge and emergent issues as well as future research directions. In this way, we can offer a combination of recent developments that are informative and offer a clear perspective of where the ACC research has reached and the possibilities that lay ahead.
@@ -643,6 +643,7 @@ Al-Turki et al. present a rule-authoring frontend where experts turn code text i
 ACC is moving from research to practice through end-to-end pipelines that plug into BIM, authoring tools that create structured rules, semantic enrichment that repairs IFC gaps, and platform specifications for infrastructure, forming a deployable chain where rules are authored, models are enriched, checks are executed, and results are reported inside live workflows. Key gaps for real deployment include larger real datasets and stronger baselines, a robust bridge from text outputs to BIM-aware execution, broader validation across rule families and regions, libraries of reusable enrichment patterns, and shared schemas with public test assets for infrastructure so results are consistent across projects and authorities.
 
 \section{Discussion}
+\label{Thematic Synthesis}  
 This review indicates that automated compliance checking in AEC is converging around a consistent pipeline: multimodal extraction of regulatory artefacts, their formalisation into machine-readable logic, their semantic alignment to IFC/BIM and representation and reasoning of rules. Throughout these phases, the most common result is a shared machine-actionable layer which various tools can query or execute with the aid of ontology-based rules, SHACL or SPARQL validation and procedural checks that are explicitly bound to model entities. This layer explains handoffs, enables auditability, and minimizes the necessity of end-to-end custom solutions.
 
 According to the thematic synthesis, we observe two dominant clusters in the literature. One is knowledge-engineered focused; this concerns semantic alignment with BIM/IFC and the integration of ontologies and knowledge graphs. The second is implementation oriented, spans tool development in actual projects and human-in-the-loop interactions. The clusters are related to explainability and evaluation, but not anchored by them, which partly explains why fully integrated, auditable end-to-end systems remain quite rare. Innovation often moves in parallel streams, with strong representational work upstream and usability work downstream, and only modest cross pollination between the two.
@@ -652,7 +653,9 @@ The degree of maturity also varies in the pipeline. Formalisation and rule repre
 Methodological patterns are powering the strength of current claims. The vast majority of studies justify themselves on constrained corpora or build special models rely on prompts, scripts or ontologies that cannot be publicly reusable. Metrics commonly used such as precision and recall on extraction and pass or fail accuracy on rule execution and do not appear in the literature as consequences of named accuracy measures. There are limited common datasets and gold standard that would allow comparison to be done under control across the areas and jurisdictions.
 
 There are apparent priorities behind these observations. Teams are expected to apply a common semantic core using RDF or OWL with SHACL or SPARQL and create reusable mapping libraries to support semantic alignment, develop outputs executions including a rule identifier, the triggering evidence, linked IFC GUIDs, and a concise rationale. The community ought to publish open benchmarks listing regulatory text coupled with IFC models and gold rule encodings, human in the loop protocols with quantitative targets, and compare end to end pilots of hybrid large language model and symbolic pipelines with purely symbolic and large language model baselines. 
+
 \section{Conclusion}
+\label{Conclusion}
 We set out to clarify the state of automated compliance checking from 2022 to 2025 and to organise a uniformly sampled corpus from Scopus, Web of Science, IEEE Xplore and a deep search with ChatGPT. Using a ten theme framework that spans extraction, formalisation, BIM and IFC alignment, rule representation, ontologies and knowledge graphs, explainability, human in the loop, model driven compliance intelligence, evaluation, and tool deployment, we applied de-duplication, coverage analysis, semantic ranking with MiniLM embeddings, and close reading of the highest ranked papers.
 
 We find our synthesis demonstrates how the field is converging around common semantics. The most typical modes of applying standards to various types of rules in most systems are three common approaches: ontology with SWRL inference, SHACL or SPARQL validation, and procedural checks against model entities. By contrast, integration into production workflows is less mature, and explainability and human supervision receive less systematic attention. Evaluations tend to be expert gold standard based, and report precision, recall, F1 and time to result. These steps are beneficial in terms of comparison but they also indicate the lack of availability of open and reusable test beds.
