@@ -1,0 +1,188 @@
+Cycle #1
+--------
+Prompt:
+--------
+Search the web for academic papers on:
+"Automated Compliance Checking" AND AEC published between 2022 and 2025.
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+------------------------------------------------------------------
+GPT-4o (Deep Search):
+To help me find the most relevant academic papers on "Automated Compliance Checking" in the Architecture, Engineering, and Construction (AEC) sector between 2022 and 2025, could you please confirm the following:
+
+1. Do you want peer-reviewed journal and conference papers only, or should I also include preprints (e.g., arXiv) and technical reports?
+
+2. Are there specific databases or publishers you'd like me to prioritize (e.g., IEEE, Springer, Elsevier, ACM, Scopus)?
+
+3. How many papers would you like returned — a comprehensive list or a selection of the most relevant?
+
+Once I have that information, I’ll begin the research and compile the output in CSV format as requested.
+
+Prompts:
+1. All
+2. All
+3. All
+
+GPT-4o (Deep Search):
+Output: 01_ACC_(2022-2025)_AND_AEC [11].csv
+---------------------------------------------------------------------------
+Cycle #2
+----------
+Prompt:
+Search the web for academic papers on:
+"Automated Compliance Checking" AND Natural Language Processing published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+GPT-4o (Deep Search):
+Just to confirm before I begin: would you like me to include all types of academic sources (peer-reviewed papers, preprints, technical reports) from all databases and publishers? And should I aim for a comprehensive list of all relevant papers from 2022 to 2025?
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 02_ACC_(2022-2025)_AND_NLP [10]
+---------------------------------------------------------------------------
+Cycle #3
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND BIM OR IFC published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 03_ACC_(2022-2025)_AND_BIM_OR_IFC [10]
+
+---------------------------------------------------------------------------
+Cycle #4
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND Rule Based published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 03_ACC_(2022-2025)_AND_Rule_Based [12]
+
+---------------------------------------------------------------------------
+Cycle #5
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND Ontology published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 02_ACC_(2022-2025)_AND_Ontology [12]
+
+---------------------------------------------------------------------------
+Cycle #6
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND Knowledge Graph published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 02_ACC_(2022-2025)_AND_Knowledge_Graph [6]
+
+---------------------------------------------------------------------------
+Cycle #7
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND Large Language Models published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 02_ACC_(2022-2025)_AND_Large_Language_Models [10]
+
+---------------------------------------------------------------------------
+Cycle #8
+----------
+Prompt:
+Search the web for unlimited academic papers on: 
+"Automated Compliance Checking" AND Artificial_Intelligence OR AI published between 2022 and 2025. 
+Return a structured list with:
+- Title
+- Authors
+- Year
+- DOI or URL
+- Abstract
+- Source (journal/conference)
+Output as CSV.
+
+Prompt:
+1. peer-reviewed papers
+2. Comprehensive list
+
+GPT-4o (Deep Search):
+Output: 02_ACC_(2022-2025)_AND_Artificial_Intelligence_OR_AI [10]
