@@ -43,5 +43,5 @@ for j in range(i + 1, len(axs)):
 
 plt.tight_layout()
 plt.subplots_adjust(wspace=3.5, hspace=0.5, left=0.38, right=0.97, top=0.95, bottom=0.1)
-plt.savefig("highest_ranking_papers.png", dpi=300)
+plt.savefig("highest_ranking_papers.png", dpi=250)
 plt.show()
