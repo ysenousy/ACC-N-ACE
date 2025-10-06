@@ -22,8 +22,8 @@ Keywords: Natural Language Processing, NLP, multimodal extraction, document AI, 
 """,
 
     "Formalisation of Regulatory Text": """
-Transforming building regulations from prose and tables into precise, logic-ready structures by decomposing requirements, capturing parameters and thresholds, modeling applicability conditions and exceptions, resolving cross-references and dependencies, and encoding them in a traceable logic representation with tree and graph views for automated compliance reasoning.
-Keywords: requirement decomposition, clause structuring, logic-based representation, predicate/production rules, tree/graph visualisation, parameter capture, threshold extraction, applicability conditions, exception modelling, dependency modelling, cross-reference resolution, rule atomization, source traceability, computable rules, reasoning-ready constraints, preparation for automated compliance checking.
+Building regulations are being transformed from prose and tables to precise, logic-ready structures by decomposing requirements, capturing parameters and thresholds, modeling applicability conditions and exceptions, resolving cross-references and dependencies, and encoding them in a traceable logic representation with tree and graph views for automated compliance reasoning.
+Keywords: requirement decomposition, clause structuring, logic-based representation, predicate/production rules, tree/graph visualisation, parameter capture, threshold extraction, applicability conditions, exception modelling, dependency modelling, cross-reference resolution, rule atomization, source traceability, computable rules, reasoning-ready constraints.
 """,
 
     "Semantic Alignment with BIM/IFC": """
@@ -32,37 +32,37 @@ Keywords: semantic alignment, IFC mapping, rule to model alignment, entity and p
 """,
 
     "Integration of Ontologies and Knowledge Graphs": """
-Using ontologies and knowledge graphs to formally represent regulatory concepts, domain entities, and their relationships, enabling semantic reasoning, rule-based compliance checking, and integration across data sources such as BIM, sensors, and computer vision. These structures support automated inference, consistency checking, and hazard detection through formal languages like OWL, SWRL, and SPARQL.
+Ontologies and knowledge graphs used to formalize regulatory concepts, domain entities, and their interactions, allowing for semantic reasoning, rule-based compliance verification, and data integration across multiple sources such as BIM, sensors, and computer vision. These structures enable automated inference, consistency checking using formal languages like as OWL, SWRL, and SPARQL.  
 Keywords: ontology modeling, knowledge graph, semantic reasoning, rule-based compliance checking, ontology-driven integration, OWL, SWRL, RDF, SPARQL queries, semantic interoperability, domain semantics, hazard detection, ontology-BIM integration, visual-semantic reasoning, logic-based rule encoding, semantic annotation, multi-source data fusion.
 """,
 
     "Rule Representation and Reasoning": """
-Designing and implementing formal representations of regulatory rules using logic-based, semantic, or visual languages to support automated compliance reasoning. These approaches include first-order logic clauses, rule trees, visual rule languages, decision models (e.g., DMN), and semantic rule formats (e.g., RuleML), enabling consistent, transparent, and executable rule evaluation within BIM and regulatory systems.
+Creating and implementing formal representations of regulatory requirements in logic-based, semantic, or visual languages to facilitate automated compliance reasoning. These approaches include first-order logic clauses, rule trees, visual rule languages, decision models (e.g., DMN), and semantic rule formats (e.g., RuleML), all of which enable uniform, visible, and executable rule assessment within BIM and regulatory systems.
 Keywords: rule representation, logic-based modeling, first-order logic, logic clauses, tree-based rule structures, visual rule language, DMN, BPMN, semantic rule encoding, RuleML, rule classification, rule schema, logic programming, compliance reasoning, rule evaluation, reasoning engine.
 """,
 
     "Model–Driven Compliance Intelligence": """
-Leveraging large language models, deep learning, and retrieval-augmented generation to automate compliance understanding, rule extraction, and regulatory interpretation. These approaches integrate semantic retrieval, ontology grounding, and few-shot learning to enhance adaptability, reduce manual rule authoring, and support domain-specific compliance reasoning within BIM and construction workflows.
+Using large language models, deep learning, and retrieval-augmented generation to automate compliance understanding, rule extraction, and regulatory interpretation. These approaches combine semantic retrieval, ontology grounding, and few-shot learning to improve adaptability, eliminate manual rule authoring, and enable domain-specific compliance reasoning in BIM and workflows.
 Keywords: large language models, LLM, GPT, BERT, ChatGPT, retrieval-augmented generation, RAG, prompt engineering, few-shot learning, one-shot learning, compliance automation, text-to-rule generation, deep learning pre-classification, ontology-enhanced LLM, semantic retrieval, vector embedding, compliance AI pipeline, fine-tuned transformer, domain adaptation, hybrid AI frameworks.
 """,
 
     "Explainability and Trust in AI Systems": """
-Designing compliance checking systems that offer interpretable, user-understandable outputs to build trust among practitioners, auditors, and regulators. This includes the use of visual logic models, transparent rule structures, and intuitive representations that allow users to trace rule decisions back to source regulations and assess system behavior.
+Building compliance checking systems in a way that offer interpretable, user-understandable outputs to help develop trust with the practitioners, auditors, and regulators. This involves application of visual logic models, transparent rule structures, and intuitive representations that allow users to trace rule decisions back to source regulations and assess system behaviour.
 Keywords: explainable compliance, tree-based visualization, user-understandable logic, interpretable rules, regulatory traceability, transparent reasoning, compliance explainability, trust in AI, AI-assisted decision-making, visual logic modeling, rule transparency, system accountability.
 """,
 
     "Human-in-the-Loop Approaches": """
 Integrating human expertise into automated compliance systems to support interpretation, validation, and decision-making. These approaches ensure adaptability, trust, and accountability by involving users in system development, feedback loops, and oversight.
-Keywords: human-in-the-loop, expert validation, hybrid AI-human systems, participatory compliance checking, semi-automated verification, human oversight, stakeholder collaboration, manual override, user-in-the-loop, feedback loop, human-assisted decision-making, domain expert review, adaptive compliance systems, collaborative AI.
+Keywords: human-in-the-loop, expert validation, hybrid AI-human systems, participatory compliance checking, semi-automated verification, human oversight, stakeholder collaboration, manual override, user-in-the-loop, feedback loop, human-assisted decision-making, domain expert review, adaptive compliance systems.
 """,
 
     "Evaluation and Benchmarking": """
-Evaluating the performance, accuracy, usability, and readiness of automated compliance checking systems through comparative studies, reviews, and standardized metrics. These efforts help identify strengths, limitations, and research gaps across tools, techniques, and industry adoption.
+Evaluating the performance, accuracy, usability, and readiness of automated compliance checking systems through comparative studies, reviews, and standardized metrics. 
 Keywords: benchmarking, evaluation metrics, performance assessment, system validation, comparative analysis, accuracy, precision, recall, F1-score, rule coverage, tool maturity, scientometric review, usability testing, adoption readiness, validation frameworks, review methodology, evaluation criteria, compliance testing metrics.
 """,
 
     "Tool Development and Real-World Application": """
-Designing, implementing, and validating practical software systems for automated compliance checking (ACC) within real-world architectural, engineering, and construction (AEC) environments. These tools embed rule engines, visual programming interfaces, BIM integration, and semantic reasoning into workflows. They are tested using domain-specific standards, case studies, or pilot projects, bridging the gap between theoretical research and operational practice.
+Designing, implementing, and validating practical software systems for automated compliance checking (ACC) within real-world architectural, engineering, and construction (AEC) environments.
 Keywords: compliance tool, BIM integration, IFC-based checking, domain-specific language, tool validation, automated BIM checking, knowledge-driven tool, generative design, workflow automation, pilot project, real-world implementation, case study evaluation, ACC software development.
 """
 }
