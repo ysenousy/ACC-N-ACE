@@ -62,7 +62,7 @@ Keywords: benchmarking, evaluation metrics, performance assessment, system valid
 """,
 
     "Tool Development and Real-World Application": """
-Designing, implementing, and validating practical software systems for automated compliance checking (ACC) within real-world architectural, engineering, and construction (AEC) environments.
+Designing, implementing, and validating practical software systems for automated compliance checking (ACC) within real-world environments.
 Keywords: compliance tool, BIM integration, IFC-based checking, domain-specific language, tool validation, automated BIM checking, knowledge-driven tool, generative design, workflow automation, pilot project, real-world implementation, case study evaluation, ACC software development.
 """
 }
