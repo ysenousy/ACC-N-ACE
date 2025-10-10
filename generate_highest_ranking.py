@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import math
 
 # === Configuration ===
-TOP_N = 5  # Number of top papers per theme
+TOP_N = 6  # Number of top papers per theme
 COLUMNS = 2  # Number of diagrams per row
 
 # Load data

@@ -21,6 +21,11 @@ plt.xlabel("Themes")
 plt.ylabel("Average Cosine Similarity Score")
 plt.xticks(rotation=45, ha='right')
 plt.grid(True)
+
+# Add values above each point
+for i, score in enumerate(average_scores):
+    plt.text(i, score + 0.01, f"{score:.3f}", ha='center', va='bottom', fontsize=9)
+
 plt.tight_layout()
 plt.savefig("average_score_per_theme.png", dpi=300)
 plt.show()
