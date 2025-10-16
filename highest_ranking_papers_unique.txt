@@ -1,0 +1,69 @@
+=== Multimodal Information Extraction ===
+  1. Design Healing framework for automated code compliance — 0.7340
+  2. Integrating NLP and context free grammar for complex rule interpretation towards automated compliance checking — 0.6930
+  3. Features of Regulation Document Translation into a Machine Readable Format within the Verification of BIM — 0.6780
+  4. Automatic quality compliance checking in concrete dam construction Integrating rule syntax parsing and semantic distance — 0.6770
+  5. Moving automated compliance checking to the operational phase of the building life cycle  analysis and feasibility study in the UK — 0.6750
+
+=== Semantic Alignment with BIM/IFC ===
+  1. A Semantic Web and IFC Based Framework for Automated BIM Compliance Checking — 0.8150
+  2. Automatic compliance checking of BIM models against quality standards based on ontology technology — 0.7860
+  3. Automated fire risk assessment and mitigation in building blueprints using computer vision and deep generative models — 0.7690
+  4. Research on a BIM Model Quality Compliance Checking Method Based on a Knowledge Graph — 0.7680
+  5. OntoBPR An ontology-based framework for performing building permit reviews using standardized information containers — 0.7660
+
+=== Formalisation of Regulatory Text ===
+  1. Natural language generation and deep learning for intelligent building codes — 0.7660
+  2. Multi-requirements ontology engineering for automated processing of document-based building codes to linked building data properties — 0.7600
+  3. Knowledge informed semantic alignment and rule interpretation for automated compliance checking — 0.7590
+  4. A Multiscale Modelling Approach to Support Knowledge Representation of Building Codes — 0.7560
+  5. A Semantic Representation Method of Building Codes Applied to Compliance Checking — 0.7560
+
+=== Rule Representation and Reasoning ===
+  1. Digital approaches to construction compliance checking Validating the suitability of an ecosystem approach to CC — 0.7650
+  2. Model Validation Using Invariant Signatures and Logic Based Inference for Automated Building Code Compliance Checking — 0.7600
+  3. Semi automatic representation of design code based on knowledge graph for automated compliance checking — 0.7600
+  4. Prompt-based automation of building code information transformation for compliance checking — 0.7520
+  5. Regulatory information transformation ruleset expansion to support automated building code compliance checking — 0.7520
+
+=== Integration of Ontologies and Knowledge Graphs ===
+  1. Semantic and ontology-based analysis of regulatory documents for construction industry digitalization — 0.7570
+  2. High level implementable methods for automated building code compliance checking — 0.7390
+  3. BIM Reason Validating BIM model correctness — 0.7370
+  4. A platform-based NLP-driven strategy for digitalising regulatory compliance processes for the built environment — 0.7290
+  5. Semantic BIM enrichment using a hybrid ML and rule based framework for automated tenement compliance checking — 0.7250
+
+=== Model–Driven Compliance Intelligence ===
+  1. Automated Building Information Modeling Compliance Check through a LLM Combined with DL — 0.6940
+  2. Intelligent Checking Method for Construction Schemes via Fusion of Knowledge Graph and Large Language Models — 0.6700
+  3. Deep learning based relation extraction and knowledge graph based representation of construction safety requirements — 0.6550
+  4. Transformer-based approach for automated context-aware IFC-regulation semantic information alignment — 0.6550
+  5. Optimizing automated compliance checking with ontology-enhanced natural language processing Case in the fire safety — 0.6360
+
+=== Explainability and Trust in AI Systems ===
+  1. Automated rule-based safety inspection and compliance checking of temporary guardrail systems in construction — 0.6980
+  2. Object-Centred Automated Compliance Checking A novel Bottom-up Approach — 0.6930
+  3. Large Language Model-Driven Code Compliance Checking in Building Information Modeling — 0.6870
+  4. From Automatic to Autonomous A Large Language Model driven Approach for Generic Building Compliance Checking — 0.6830
+  5. Semi automated Generation of Logic Rules for Tabular Information in Building Codes to Support ACC — 0.6730
+
+=== Human-in-the-Loop Approaches ===
+  1. CODE-ACCORD A Corpus of building regulatory data for rule generation towards automatic compliance checking — 0.6410
+  2. Human in the Loop Learning With LLMs for Efficient RASE Tagging in Building Compliance Regulations — 0.6400
+  3. A SHACL-Based Approach for Enhancing Automated Compliance Checking with RDF Data — 0.6310
+  4. Hierarchical Representation and DL-Based Method for Auto Transforming Textual Building Codes into Semantic Computable Req — 0.6150
+  5. From Unstructured Data to Knowledge Graphs An Application for Compliance Checking Problem — 0.5960
+
+=== Evaluation and Benchmarking ===
+  1. A knowledge informed optimization framework for performance based generative design of sustainable buildings — 0.7900
+  2. A GPT-based method of Automatic Compliance Checking through prompt engineering — 0.7570
+  3. Efficient compliance checking of RDF data — 0.7430
+  4. Comparative analysis of approaches for automated compliance checking of construction data — 0.7300
+  5. Taking stock A Linked Data inventory of Compliance Checking terms derived from Building Regulations — 0.7280
+
+=== Tool Development and Real-World Application ===
+  1. Validation of building models against legislation using SHACL — 0.8480
+  2. BIM Based Automated Code Compliance Checking System in Malaysian Fire Safety Regulations — 0.8380
+  3. Towards Automated Compliance Checking of Building Regulations smartNorms4BIM — 0.8330
+  4. BRISE plandok a German legal corpus of building regulations — 0.8280
+  5. A Design for Safety (DFS) Semantic Framework Development Based on Natural Language Processing (NLP) — 0.8230

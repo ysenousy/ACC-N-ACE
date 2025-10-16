@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import math
 
 # === Configuration ===
-TOP_N = 5          # Number of unique papers to display per theme (top one is locked)
+TOP_N = 6          # Number of unique papers to display per theme (top one is locked)
 COLUMNS = 2        # Subplots per row
 FIG_W = 19
 ROW_H = 4.0
@@ -184,7 +184,18 @@ for i, theme in enumerate(themes):
 for j in range(i + 1, len(axs)):
     fig.delaxes(axs[j])
 
+# --- Print each theme with paper name and score ---
+for theme in themes:
+    print(f"\n=== {theme} ===")
+    rows = per_theme_rows.get(theme, [])
+    if not rows:
+        print("  (No unique papers available)")
+        continue
+    for rank, r in enumerate(rows, start=1):
+        print(f"  {rank}. {r['Paper Title']} — {r['Score']:.4f}")
+
+    
 plt.tight_layout()
-plt.subplots_adjust(wspace=3.5, hspace=0.5, left=0.38, right=0.97, top=0.95, bottom=0.1)
+plt.subplots_adjust(wspace=1, hspace=0.5, left=0.15, right=0.97, top=0.95, bottom=0.1)
 plt.savefig("highest_ranking_papers_unique.png", dpi=250)
 plt.show()
