@@ -22,10 +22,10 @@ axs = axs.flatten()
 # Plot each theme
 for i, theme in enumerate(themes):
     score_col = f"{theme} (score)"
-    top_df = df[['Paper Title', score_col]].sort_values(by=score_col, ascending=False).head(TOP_N)
+    top_df = df[['Authors', score_col]].sort_values(by=score_col, ascending=False).head(TOP_N)
     print(top_df)
     ax = axs[i]
-    bars = ax.barh(top_df['Paper Title'], top_df[score_col], color='lightblue')
+    bars = ax.barh(top_df['Authors'], top_df[score_col], color='lightblue')
     ax.set_title(theme, fontsize=10)
     ax.invert_yaxis()  # Highest on top
     ax.tick_params(axis='y', labelsize=8)

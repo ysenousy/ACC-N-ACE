@@ -1,69 +1,79 @@
 === Multimodal Information Extraction ===
-  1. Design Healing framework for automated code compliance — 0.7340
-  2. Integrating NLP and context free grammar for complex rule interpretation towards automated compliance checking — 0.6930
-  3. Features of Regulation Document Translation into a Machine Readable Format within the Verification of BIM — 0.6780
-  4. Automatic quality compliance checking in concrete dam construction Integrating rule syntax parsing and semantic distance — 0.6770
-  5. Moving automated compliance checking to the operational phase of the building life cycle  analysis and feasibility study in the UK — 0.6750
+  1. J. Wu et al. 2025 — 0.7340 — NR
+  2. Yu. Zhou et al. 2022 — 0.6930 — R
+  3. T. Beach et al. 2024-2 — 0.6750 — R
+  4. S. Fuchs et al. 2022 — 0.6660 — R
+  5. R. Zhang et al. 2022 — 0.6610 — R
+  6. S. Fuchs et al. 2024 — 0.6600 — R
 
 === Semantic Alignment with BIM/IFC ===
-  1. A Semantic Web and IFC Based Framework for Automated BIM Compliance Checking — 0.8150
-  2. Automatic compliance checking of BIM models against quality standards based on ontology technology — 0.7860
-  3. Automated fire risk assessment and mitigation in building blueprints using computer vision and deep generative models — 0.7690
-  4. Research on a BIM Model Quality Compliance Checking Method Based on a Knowledge Graph — 0.7680
-  5. OntoBPR An ontology-based framework for performing building permit reviews using standardized information containers — 0.7660
+  1. L. Jia et al. 2025 — 0.8150 — R
+  2. Z. Ma et al. 2024 — 0.7860 — R
+  3. D. Chen et al. 2024 — 0.7690 — NR
+  4. S. Zhu et al. 2024 — 0.7680 — R
+  5. P. Hagedorn et al. 2025 — 0.7660 — R
+  6. E. Makisha 2023 — 0.7650 — R
 
 === Formalisation of Regulatory Text ===
-  1. Natural language generation and deep learning for intelligent building codes — 0.7660
-  2. Multi-requirements ontology engineering for automated processing of document-based building codes to linked building data properties — 0.7600
-  3. Knowledge informed semantic alignment and rule interpretation for automated compliance checking — 0.7590
-  4. A Multiscale Modelling Approach to Support Knowledge Representation of Building Codes — 0.7560
-  5. A Semantic Representation Method of Building Codes Applied to Compliance Checking — 0.7560
+  1. R. Zhang and N. El-Gohary 2022 — 0.7660 — R
+  2. S. Zentgraf et al. 2022 — 0.7600 — R
+  3. Z. Zheng et al. 2022 — 0.7590 — R
+  4. D. Lehoczky et al. 2022 — 0.7560 — NR
+  5. J. Lee et al. 2023 — 0.7560 — PR
+  6. J. Wu 2023 — 0.7560 — R
 
 === Rule Representation and Reasoning ===
-  1. Digital approaches to construction compliance checking Validating the suitability of an ecosystem approach to CC — 0.7650
-  2. Model Validation Using Invariant Signatures and Logic Based Inference for Automated Building Code Compliance Checking — 0.7600
-  3. Semi automatic representation of design code based on knowledge graph for automated compliance checking — 0.7600
-  4. Prompt-based automation of building code information transformation for compliance checking — 0.7520
-  5. Regulatory information transformation ruleset expansion to support automated building code compliance checking — 0.7520
+  1. T. Beach et al. 2024 — 0.7650 — NR
+  2. J. Wu and J. Zhang 2022 — 0.7600 — R
+  3. M. Yang et al. 2023 — 0.7600 — R
+  4. F. Yang and J. Zhang 2024 — 0.7520 — R
+  5. P. Patlakas et al. 2024 — 0.7520 — R
+  6. X. Xue and J. Zhang 2022 — 0.7520 — R
 
 === Integration of Ontologies and Knowledge Graphs ===
-  1. Semantic and ontology-based analysis of regulatory documents for construction industry digitalization — 0.7570
-  2. High level implementable methods for automated building code compliance checking — 0.7390
-  3. BIM Reason Validating BIM model correctness — 0.7370
-  4. A platform-based NLP-driven strategy for digitalising regulatory compliance processes for the built environment — 0.7290
-  5. Semantic BIM enrichment using a hybrid ML and rule based framework for automated tenement compliance checking — 0.7250
+  1. Z. Kabzhan et al. 2025 — 0.7570 — R
+  2. P. Zech et al. 2024 — 0.7370 — R
+  3. R. Kruiper et al. 2024 — 0.7290 — R
+  4. A. Karmakar and V. Delhi 2025 — 0.7250 — R
+  5. L. Jiang et al. 2022-2 — 0.7210 — R
+  6. W. Goh et al. 2024 — 0.7160 — R
 
 === Model–Driven Compliance Intelligence ===
-  1. Automated Building Information Modeling Compliance Check through a LLM Combined with DL — 0.6940
-  2. Intelligent Checking Method for Construction Schemes via Fusion of Knowledge Graph and Large Language Models — 0.6700
-  3. Deep learning based relation extraction and knowledge graph based representation of construction safety requirements — 0.6550
-  4. Transformer-based approach for automated context-aware IFC-regulation semantic information alignment — 0.6550
-  5. Optimizing automated compliance checking with ontology-enhanced natural language processing Case in the fire safety — 0.6360
+  1. N. Chen et al. 2024 — 0.6940 — R
+  2. L. Hao et al. 2024 — 0.6700 — R
+  3. R. Zhang and N. El-Gohary 2023 — 0.6550 — R
+  4. X. Wang and N. El-Gohary 2023 — 0.6550 — R
+  5. Y. Chen and H. Jiang 2024 — 0.6360 — R
+  6. J. Zhang 2023 — 0.6250 — R
 
 === Explainability and Trust in AI Systems ===
-  1. Automated rule-based safety inspection and compliance checking of temporary guardrail systems in construction — 0.6980
-  2. Object-Centred Automated Compliance Checking A novel Bottom-up Approach — 0.6930
-  3. Large Language Model-Driven Code Compliance Checking in Building Information Modeling — 0.6870
-  4. From Automatic to Autonomous A Large Language Model driven Approach for Generic Building Compliance Checking — 0.6830
-  5. Semi automated Generation of Logic Rules for Tabular Information in Building Codes to Support ACC — 0.6730
+  1. E. Nuyts et al. 2024 — 0.6980 — R
+  2. K. Johansen et al. 2024 — 0.6980 — R
+  3. O. Doukari et al. 2022 — 0.6930 — R
+  4. S. Madireddy et al. 2025 — 0.6870 — R
+  5. H. Ying and R. Sacks 2024 — 0.6830 — R
+  6. X. Xue et al. 2022 — 0.6730 — NR
 
 === Human-in-the-Loop Approaches ===
-  1. CODE-ACCORD A Corpus of building regulatory data for rule generation towards automatic compliance checking — 0.6410
-  2. Human in the Loop Learning With LLMs for Efficient RASE Tagging in Building Compliance Regulations — 0.6400
-  3. A SHACL-Based Approach for Enhancing Automated Compliance Checking with RDF Data — 0.6310
-  4. Hierarchical Representation and DL-Based Method for Auto Transforming Textual Building Codes into Semantic Computable Req — 0.6150
-  5. From Unstructured Data to Knowledge Graphs An Application for Compliance Checking Problem — 0.5960
+  1. H. Hettiarachchi et al. 2025 — 0.7060 — R
+  2. J. Anim et al. 2024 — 0.6860 — PR
+  3. D. Al-Turki et al. 2024 — 0.6640 — R
+  4. T. Bloch et al. 2023 — 0.6450 — PR
+  5. V. Schuk et al. 2022 — 0.6450 — PR
+  6. H. Gao et al. 2022 — 0.6300 — NR
 
 === Evaluation and Benchmarking ===
-  1. A knowledge informed optimization framework for performance based generative design of sustainable buildings — 0.7900
-  2. A GPT-based method of Automatic Compliance Checking through prompt engineering — 0.7570
-  3. Efficient compliance checking of RDF data — 0.7430
-  4. Comparative analysis of approaches for automated compliance checking of construction data — 0.7300
-  5. Taking stock A Linked Data inventory of Compliance Checking terms derived from Building Regulations — 0.7280
+  1. Z. Wu et al. 2024 — 0.7900 — NR
+  2. X. Liu and X. Zhu 2023 — 0.7570 — R
+  3. L. Robaldo et al. 2023 — 0.7430 — R
+  4. Y. Li et al. 2023 — 0.7300 — R
+  5. Q. Ren et al. 2024 — 0.7260 — R
+  6. A. Karmakar et al. 2024 — 0.7180 — NR
 
 === Tool Development and Real-World Application ===
-  1. Validation of building models against legislation using SHACL — 0.8480
-  2. BIM Based Automated Code Compliance Checking System in Malaysian Fire Safety Regulations — 0.8380
-  3. Towards Automated Compliance Checking of Building Regulations smartNorms4BIM — 0.8330
-  4. BRISE plandok a German legal corpus of building regulations — 0.8280
-  5. A Design for Safety (DFS) Semantic Framework Development Based on Natural Language Processing (NLP) — 0.8230
+  1. E. Nuyts et al. 2023 — 0.8480 — R
+  2. A. Ismail et al. 2023 — 0.8380 — R
+  3. I. Huitzil et al. 2022 — 0.8330 — R
+  4. G. Recski et al. 2024 — 0.8280 — PR
+  5. Y. Zhou et al. 2022 — 0.8230 — R
+  6. R. Kruiper et al. 2024-2 — 0.8160 - PR

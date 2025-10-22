@@ -10,7 +10,7 @@ score_cols = [col for col in df.columns if "(score)" in col]
 df_scores = df[score_cols]
 
 # Optional: Add paper titles as index
-df_scores.index = df["Paper Title"]
+df_scores.index = df["Authors"]
 
 # Generate heatmap
 plt.figure(figsize=(15, 10))

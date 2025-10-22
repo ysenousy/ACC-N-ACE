@@ -4,7 +4,7 @@ validation of building models against legislation using shacl emma nuyts1,*, jer
 ==== TABLES ====
 cwpr eoo urckr esehdoinpgshisttspn:// c1e6u1r3-w-0s0.o7r3g
 ==== IMAGES ====
-E Nuyts et al. 2023_page9_img1.png
+E. Nuyts et al. 2023_page9_img1.png
 
 ==== OCR TEXT FROM IMAGES ====
---- text from e nuyts et al. 2023_page9_img1.png --- complince checker x v x sf oo httpylocalhost3000report ewe 2 o compliance checker there were 25 building elements found that do not comply to the belgian building code on accessibility. download validation report a violation was found in the stairflightlanding shape the building element with name stairflightbcd 1cf34-5c93-41cc-a7e4-6669a028e824 and id 569487 does not comply. art. 20 - a staircase must have an intermediate landing after at most 17 treads. a violation was found in the stairflightriser shape the building element with name stairflight3f36fd30-4028-40f0-bc0e-73cddf9 19877 and id 694753 does not comply. art. 20 - the riser height must be at most 180 mm. a violation was found in the stairflighttread shape
+--- text from e. nuyts et al. 2023_page9_img1.png --- complince checker x v x sf oo httpylocalhost3000report ewe 2 o compliance checker there were 25 building elements found that do not comply to the belgian building code on accessibility. download validation report a violation was found in the stairflightlanding shape the building element with name stairflightbcd 1cf34-5c93-41cc-a7e4-6669a028e824 and id 569487 does not comply. art. 20 - a staircase must have an intermediate landing after at most 17 treads. a violation was found in the stairflightriser shape the building element with name stairflight3f36fd30-4028-40f0-bc0e-73cddf9 19877 and id 694753 does not comply. art. 20 - the riser height must be at most 180 mm. a violation was found in the stairflighttread shape

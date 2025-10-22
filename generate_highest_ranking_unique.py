@@ -13,9 +13,9 @@ ROW_H = 4.0
 df = pd.read_csv("classified_papers_semantic_weighted.csv")
 
 # Validate & normalize columns
-if 'Paper Title' not in df.columns:
-    raise ValueError("CSV must contain a 'Paper Title' column.")
-df['Paper Title'] = df['Paper Title'].astype(str)
+if 'Authors' not in df.columns:
+    raise ValueError("CSV must contain a 'Authors' column.")
+df['Authors'] = df['Authors'].astype(str)
 
 # Extract theme score columns (ending with " (score)")
 score_cols = [c for c in df.columns if c.endswith(" (score)")]
@@ -27,7 +27,7 @@ scores = np.vstack([df[f"{t} (score)"].astype(float).to_numpy() for t in themes]
 scores = np.where(np.isnan(scores), NEG_INF, scores)
 
 n_themes, n_papers = scores.shape
-paper_titles = df['Paper Title'].tolist()
+paper_titles = df['Authors'].tolist()
 
 # === Step 1: Lock the unique TOP-1 paper per theme (never changes with TOP_N) ===
 locked_theme_to_paper = {}
@@ -136,7 +136,7 @@ for theme_i, theme in enumerate(themes):
     # Sort selections for this theme (high to low) and cap to TOP_N (defensive)
     sel = sorted(assigned[theme], key=lambda x: -x[1])[:TOP_N]
     per_theme_rows[theme] = [
-        {"Paper Title": paper_titles[pi], "Score": float(sc)} for (pi, sc) in sel
+        {"Authors": paper_titles[pi], "Score": float(sc)} for (pi, sc) in sel
     ]
     all_selected_scores.extend([r["Score"] for r in per_theme_rows[theme]])
 
@@ -164,7 +164,7 @@ for i, theme in enumerate(themes):
         ax.text(xmax * 0.01, 0, "0.00", va='center', fontsize=8)
         continue
 
-    titles = [r["Paper Title"] for r in data]
+    titles = [r["Authors"] for r in data]
     scs = [r["Score"] for r in data]
 
     bars = ax.barh(titles, scs, color='lightblue')
@@ -192,7 +192,7 @@ for theme in themes:
         print("  (No unique papers available)")
         continue
     for rank, r in enumerate(rows, start=1):
-        print(f"  {rank}. {r['Paper Title']} — {r['Score']:.4f}")
+        print(f"  {rank}. {r['Authors']} — {r['Score']:.4f}")
 
     
 plt.tight_layout()

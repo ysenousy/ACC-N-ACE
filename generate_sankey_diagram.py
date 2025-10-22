@@ -5,13 +5,13 @@ import plotly.graph_objects as go
 df = pd.read_csv("classified_papers_semantic_weighted.csv")
 
 # === Melt the dataframe to long format ===
-melted = df.melt(id_vars=["Paper Title"], var_name="Theme", value_name="Score")
+melted = df.melt(id_vars=["Authors"], var_name="Theme", value_name="Score")
 
 # === Filter only 'Directly Addressed' entries ===
 filtered = melted[melted["Score"].str.strip().str.lower() == "directly addressed"]
 
 # === Create label list ===
-paper_titles = filtered["Paper Title"].unique().tolist()
+paper_titles = filtered["Authors"].unique().tolist()
 themes = filtered["Theme"].unique().tolist()
 labels = paper_titles + themes
 
@@ -19,7 +19,7 @@ labels = paper_titles + themes
 label_indices = {label: i for i, label in enumerate(labels)}
 
 # === Define source, target, value for Sankey diagram ===
-sources = filtered["Paper Title"].map(label_indices)
+sources = filtered["Authors"].map(label_indices)
 targets = filtered["Theme"].map(label_indices)
 values = [1] * len(filtered)  # each link has equal weight
 

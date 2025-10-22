@@ -7,7 +7,6 @@ df = pd.read_csv("classified_papers_semantic_weighted.csv")
 # === Step 2: Remove 'Paper Title' and keep only base 10 themes ===
 df = df.drop(columns=["Paper Title"], errors="ignore")
 
-# Filter to keep only rows (columns) that match the 10 base themes exactly
 themes_to_keep = [
     "Multimodal Information Extraction",
     "Formalisation of Regulatory Text",
@@ -33,17 +32,37 @@ theme_stats = pd.DataFrame({
 })
 
 # === Step 5: Plot Horizontal Stacked Bar Chart ===
-plt.figure(figsize=(12, 8))
+fig, ax = plt.subplots(figsize=(12, 8))
 theme_stats.plot(
     kind="barh",
     stacked=True,
     color=["mediumaquamarine", "khaki", "gold"],
-    figsize=(12, 8)
+    ax=ax
 )
-plt.title("Thematic Coverage of Papers", fontsize=14)
-plt.xlabel("Number of Papers")
-plt.ylabel("Themes")
-plt.legend(title="Addressing Level", bbox_to_anchor=(1.05, 1), loc="upper left")
+
+# Add title and labels
+ax.set_title("Thematic Coverage of Papers", fontsize=14)
+ax.set_xlabel("Number of Papers")
+ax.set_ylabel("Themes")
+ax.legend(title="Addressing Level", bbox_to_anchor=(1.05, 1), loc="upper left")
+
+# === Step 6: Add numbers on bars ===
+for i, (index, row) in enumerate(theme_stats.iterrows()):
+    left = 0
+    for category in theme_stats.columns:
+        value = row[category]
+        if value > 0:
+            ax.text(
+                left + value / 2,  # position in the middle of the segment
+                i,                 # y-position
+                str(value),        # text label
+                va="center",
+                ha="center",
+                fontsize=9,
+                color="black"
+            )
+        left += value
+
 plt.tight_layout()
-plt.savefig("theme_coverage.png", dpi=300)
+plt.savefig("theme_coverage", dpi=300)
 plt.show()

@@ -52,8 +52,8 @@ Keywords: explainable compliance, tree based visualization, user understandable 
 """,
 
     "Human-in-the-Loop Approaches": """
-Incorporating human experts into compliance pipelines for supervision and refinement.
-Keywords: HITL, Human-in-the-Loop, hybrid AI-human, interactive compliance, manual override, expert validation, user-in-the-loop, participatory compliance checking, semi-automated verification, human feedback loop, collaborative AI, active learning, expert-in-the-loop, human review layer, crowdsourced feedback, human oversight, active learning.
+Embedding human expertise into automated compliance workflows for supervision, correction, and refinement. These methods keep experts involved through review, annotation, or intervention stages to guide machine reasoning, improve accuracy, and ensure accountable decision-making.
+Keywords: HITL, Human-in-the-Loop, hybrid AI-human, interactive compliance checking, user-in-the-loop, expert-in-the-loop, manual review, expert validation, human oversight, participatory rule authoring, semi-automated verification, human feedback loop, collaborative AI, active learning, annotation loop, manual override, quality assurance, expert correction.
 """,
 
     "Evaluation and Benchmarking": """
@@ -114,7 +114,7 @@ def analyze_paper(filepath):
                     top_sentences[theme] = sentence
 
     title = os.path.basename(filepath).replace(".txt", "")
-    result = {"Paper Title": title}
+    result = {"Authors": title}
     for theme in theme_descriptions:
         score = max_scores[theme]
         label = (
