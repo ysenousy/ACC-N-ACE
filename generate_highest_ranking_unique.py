@@ -168,9 +168,9 @@ for i, theme in enumerate(themes):
     scs = [r["Score"] for r in data]
 
     bars = ax.barh(titles, scs, color='lightblue')
-    ax.set_title(theme, fontsize=10)
+    ax.set_title(theme, fontsize=18)
     ax.invert_yaxis()  # Highest on top
-    ax.tick_params(axis='y', labelsize=8)
+    ax.tick_params(axis='y', labelsize=18)
     ax.set_xlim(0, xmax)
 
     # Add score labels
@@ -178,7 +178,7 @@ for i, theme in enumerate(themes):
         sc = scs[j]
         ax.text(bar.get_width() + xmax * 0.01,
                 bar.get_y() + bar.get_height() / 2,
-                f"{sc:.2f}", va='center', fontsize=8)
+                f"{sc:.2f}", va='center', fontsize=15)
 
 # Remove any unused subplots
 for j in range(i + 1, len(axs)):
@@ -196,6 +196,6 @@ for theme in themes:
 
     
 plt.tight_layout()
-plt.subplots_adjust(wspace=1, hspace=0.5, left=0.15, right=0.97, top=0.95, bottom=0.1)
+plt.subplots_adjust(wspace=1, hspace=0.5, left=0.22, right=0.97, top=0.95, bottom=0.1)
 plt.savefig("highest_ranking_papers_unique.png", dpi=250)
 plt.show()

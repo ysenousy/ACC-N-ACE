@@ -41,10 +41,21 @@ theme_stats.plot(
 )
 
 # Add title and labels
-ax.set_title("Thematic Coverage of Papers", fontsize=14)
-ax.set_xlabel("Number of Papers")
-ax.set_ylabel("Themes")
-ax.legend(title="Addressing Level", bbox_to_anchor=(1.05, 1), loc="upper left")
+ax.set_title("Thematic Coverage of Papers", fontsize=16)
+ax.set_xlabel("Number of Papers", fontsize=14)
+ax.set_ylabel("Themes", fontsize=14)
+
+# Tick label font sizes
+ax.tick_params(axis="both", labelsize=12)
+
+# Legend
+ax.legend(
+    title="Addressing Level",
+    fontsize=12,
+    title_fontsize=13,
+    bbox_to_anchor=(1.05, 1),
+    loc="upper left"
+)
 
 # === Step 6: Add numbers on bars ===
 for i, (index, row) in enumerate(theme_stats.iterrows()):
@@ -53,12 +64,12 @@ for i, (index, row) in enumerate(theme_stats.iterrows()):
         value = row[category]
         if value > 0:
             ax.text(
-                left + value / 2,  # position in the middle of the segment
-                i,                 # y-position
-                str(value),        # text label
+                left + value / 2,
+                i,
+                str(value),
                 va="center",
                 ha="center",
-                fontsize=9,
+                fontsize=11,  # <- changed
                 color="black"
             )
         left += value
