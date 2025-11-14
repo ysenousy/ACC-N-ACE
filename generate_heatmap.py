@@ -40,5 +40,5 @@ cbar.yaxis.label.set_size(12)     # colorbar label
 cbar.tick_params(labelsize=12)    # colorbar tick labels
 
 plt.tight_layout()
-plt.savefig("heatmap.png", dpi=200)
+plt.savefig("heatmap.png", dpi=300)
 plt.show()

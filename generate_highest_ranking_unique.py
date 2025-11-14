@@ -197,5 +197,5 @@ for theme in themes:
     
 plt.tight_layout()
 plt.subplots_adjust(wspace=1, hspace=0.5, left=0.22, right=0.97, top=0.95, bottom=0.1)
-plt.savefig("highest_ranking_papers_unique.png", dpi=250)
+plt.savefig("highest_ranking_papers_unique.png", dpi=300)
 plt.show()

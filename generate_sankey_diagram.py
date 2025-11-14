@@ -40,5 +40,5 @@ fig = go.Figure(data=[go.Sankey(
 fig.update_layout(title_text="Sankey Diagram: Papers to Themes", font_size=12,
     width=1000,   
     height=1200)
-fig.write_image("sankey_diagram.png", scale=5)
+fig.write_image("sankey_diagram.png", scale=4.17)
 fig.show()
