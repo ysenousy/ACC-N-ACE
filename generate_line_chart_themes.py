@@ -16,25 +16,29 @@ average_scores = df[score_columns].mean()
 # Clean column names for display (remove ' (score)' suffix)
 theme_names = [col.replace(' (score)', '') for col in score_columns]
 
+# Create T1, T2, ... labels
+theme_labels = [f"T{i+1}" for i in range(len(theme_names))]
+theme_mapping = {f"T{i+1}": theme for i, theme in enumerate(theme_names)}
+
 # Plotting
-plt.figure(figsize=(12, 6))
-plt.plot(theme_names, average_scores, marker='o', linestyle='-')
+fig, ax = plt.subplots(figsize=(14, 6))
+ax.plot(theme_labels, average_scores, marker='o', linestyle='-')
 
 # Title and labels
-plt.title("Average Theme Scores Across Papers", fontsize=16)
-plt.xlabel("Themes", fontsize=14)
-plt.ylabel("Average Cosine Similarity Score", fontsize=14)
+ax.set_title("Average Theme Scores Across Papers", fontsize=16)
+ax.set_xlabel("Themes", fontsize=14)
+ax.set_ylabel("Average Cosine Similarity Score", fontsize=14)
 
 # Tick label font sizes
-plt.xticks(rotation=45, ha='right', fontsize=12)
-plt.yticks(fontsize=12)
+ax.set_xticklabels(theme_labels, rotation=0, ha='center', fontsize=12)
+ax.tick_params(axis='y', labelsize=12)
 
 # Grid
-plt.grid(True)
+ax.grid(True)
 
 # Add values above each point
 for i, score in enumerate(average_scores):
-    plt.text(
+    ax.text(
         i, 
         score + 0.01, 
         f"{score:.3f}",
@@ -43,6 +47,12 @@ for i, score in enumerate(average_scores):
         fontsize=11
     )
 
-plt.tight_layout()
+# Add legend on the right
+legend_text = "Theme:\n" + "\n".join([f"{label}: {theme}" for label, theme in theme_mapping.items()])
+ax.text(1.18, 0.5, legend_text, transform=ax.transAxes, fontsize=8, verticalalignment='center',
+        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+
+plt.tight_layout(rect=[0, 0, 0.75, 1])
+plt.subplots_adjust(left=0.12, right=0.65)
 plt.savefig("average_score_per_theme.png", dpi=300)
 plt.show()

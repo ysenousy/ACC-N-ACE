@@ -12,6 +12,9 @@ df = pd.read_csv("classified_papers_semantic_weighted.csv")
 score_cols = [col for col in df.columns if "(score)" in col]
 df_scores = df[score_cols]
 
+# Extract theme names (remove " (score)" suffix)
+theme_names = [col.replace(" (score)", "") for col in score_cols]
+
 # Add paper titles as index
 df_scores.index = df["Authors"]
 
@@ -31,8 +34,16 @@ plt.xlabel("Themes", fontsize=14)
 plt.ylabel("Papers", fontsize=14)
 
 # Tick labels
-plt.xticks(rotation=45, ha="right", fontsize=12)
-plt.yticks(fontsize=10)
+# Set x-axis labels to t1, t2, ..., t10
+x_labels = [f"T{i+1}" for i in range(len(score_cols))]
+ax.set_xticklabels(x_labels, rotation=0, ha="center", fontsize=12)
+plt.yticks(fontsize=8)
+
+# Create legend box with theme names
+legend_text = "Themes:\n" + "\n".join([f"T{i+1}: {theme_names[i]}" for i in range(len(theme_names))])
+plt.figtext(0.58, 0.5, legend_text, ha='left', fontsize=9, 
+            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5),
+            verticalalignment='center', transform=plt.gcf().transFigure)
 
 # Colorbar font sizes
 cbar = ax.figure.axes[-1]
@@ -40,5 +51,7 @@ cbar.yaxis.label.set_size(12)     # colorbar label
 cbar.tick_params(labelsize=12)    # colorbar tick labels
 
 plt.tight_layout()
+# Add extra space on the left to prevent Y-axis label overlap, and on the right for legend
+plt.subplots_adjust(left=0.13, right=0.55)
 plt.savefig("heatmap.png", dpi=300)
 plt.show()
