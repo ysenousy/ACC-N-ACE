@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.3.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.1">
   <diagram name="Page-1" id="by5kbg5yBYyH9DIzLuSn">
-    <mxGraphModel dx="4364" dy="1987" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="4218" dy="1911" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -158,9 +158,6 @@
             <mxPoint x="-49.000000000000455" y="446.0000000000002" as="sourcePoint" />
             <mxPoint x="-56" y="375" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="491zekNFBOcRoDCXXGBH-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Weights&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;i style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Text: 1.0, Tables: 0.3, Images:0.1&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="479" x="-133" y="51" as="geometry" />
         </mxCell>
         <mxCell id="491zekNFBOcRoDCXXGBH-39" edge="1" parent="1" source="491zekNFBOcRoDCXXGBH-2" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="491zekNFBOcRoDCXXGBH-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
