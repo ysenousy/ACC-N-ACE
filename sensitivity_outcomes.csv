@@ -1,0 +1,6 @@
+Setting,Direct papers,Partial-only papers,Direct labels,Partial labels,Not addressed labels,Overlap vs baseline (%),Jaccard vs baseline,Theme stability,Top5 themes
+Baseline,78,10,248,605,27,100.0,1.0,Reference,Tool Development and Real-World Application | Formalisation of Regulatory Text | Rule Representation and Reasoning | Semantic Alignment with BIM/IFC | Evaluation and Benchmarking
+Stricter,60,28,99,705,76,76.9,0.769,Top themes unchanged; minor rank swap,Tool Development and Real-World Application | Formalisation of Regulatory Text | Semantic Alignment with BIM/IFC | Rule Representation and Reasoning | Evaluation and Benchmarking
+Looser,85,3,470,401,9,100.0,0.918,Top themes unchanged; minor rank swap,Tool Development and Real-World Application | Formalisation of Regulatory Text | Evaluation and Benchmarking | Rule Representation and Reasoning | Semantic Alignment with BIM/IFC
+Conservative,78,10,248,605,27,100.0,1.0,Top themes unchanged,Tool Development and Real-World Application | Formalisation of Regulatory Text | Rule Representation and Reasoning | Semantic Alignment with BIM/IFC | Evaluation and Benchmarking
+Stronger,78,10,248,605,27,100.0,1.0,Top themes unchanged,Tool Development and Real-World Application | Formalisation of Regulatory Text | Rule Representation and Reasoning | Semantic Alignment with BIM/IFC | Evaluation and Benchmarking
