@@ -5,6 +5,13 @@ import matplotlib.pyplot as plt
 CSV_PATH = "classified_papers_semantic_weighted.csv"
 DIRECT_LABEL = "directly addressed"
 
+TITLE_SIZE = 20
+AXIS_LABEL_SIZE = 16
+TICK_LABEL_SIZE = 14
+PAPER_LABEL_SIZE = 12
+THEME_BOX_SIZE = 16
+DOT_SIZE = 45
+
 TOP_N_THEMES = 10   # reduce themes to keep plot readable (set None to keep all)
 N_PAPERS = 30       # sample size for papers in the plot (set None to keep all)
 
@@ -35,23 +42,30 @@ rows, cols = np.where(A.values == 1)
 theme_labels = [f"T{i+1}" for i in range(A.shape[1])]
 theme_mapping = {f"T{i+1}": theme for i, theme in enumerate(A.columns)}
 
-fig, ax = plt.subplots(figsize=(14, 0.28 * len(A) + 2))
-ax.scatter(cols, rows, s=35)
+fig, ax = plt.subplots(figsize=(18, 0.32 * len(A) + 3))
+ax.scatter(cols, rows, s=DOT_SIZE)
 
 ax.set_xticks(range(A.shape[1]))
-ax.set_xticklabels(theme_labels, fontsize=9)
+ax.set_xticklabels(theme_labels, fontsize=TICK_LABEL_SIZE)
 ax.set_yticks(range(A.shape[0]))
-ax.set_yticklabels(A.index, fontsize=8)
+ax.set_yticklabels(A.index, fontsize=PAPER_LABEL_SIZE)
 
-ax.set_xlabel("Themes")
-ax.set_ylabel("Papers (sampled for visualization)")
-ax.set_title("Paper–Theme Dot Matrix (Directly Addressed)")
+ax.set_xlabel("Themes", fontsize=AXIS_LABEL_SIZE, labelpad=10)
+ax.set_ylabel("Papers (sampled for visualization)", fontsize=AXIS_LABEL_SIZE, labelpad=10)
+ax.set_title("Paper–Theme Dot Matrix (Directly Addressed)", fontsize=TITLE_SIZE, pad=18)
 ax.grid(axis="x", linestyle="--", alpha=0.3)
 
 # Add legend on the right
 legend_text = "Themes:\n" + "\n".join([f"{label}: {theme}" for label, theme in theme_mapping.items()])
-ax.text(1.02, 0.5, legend_text, transform=ax.transAxes, fontsize=8, verticalalignment='center',
-        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.3))
+ax.text(
+    1.05,
+    0.5,
+    legend_text,
+    transform=ax.transAxes,
+    fontsize=THEME_BOX_SIZE,
+    verticalalignment='center',
+    bbox=dict(boxstyle='round', facecolor='white', edgecolor='lightgray', alpha=0.95)
+)
 
 plt.tight_layout()
 

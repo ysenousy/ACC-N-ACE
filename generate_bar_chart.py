@@ -1,6 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+TITLE_SIZE = 20
+AXIS_LABEL_SIZE = 16
+TICK_LABEL_SIZE = 14
+LEGEND_SIZE = 14
+THEME_BOX_SIZE = 16
+BAR_LABEL_SIZE = 13
+
 # === Step 1: Load the CSV File ===
 df = pd.read_csv("classified_papers_semantic_weighted.csv")
 
@@ -20,6 +27,8 @@ themes_to_keep = [
     "Tool Development and Real-World Application"
 ]
 df = df[[theme for theme in df.columns if theme.strip() in themes_to_keep]]
+theme_labels = [f"T{i + 1}" for i in range(len(df.columns))]
+theme_mapping = dict(zip(theme_labels, df.columns))
 
 # === Step 3: Normalize labels ===
 df_normalized = df.map(lambda x: str(x).strip().lower() if isinstance(x, str) else x)
@@ -32,7 +41,7 @@ theme_stats = pd.DataFrame({
 })
 
 # === Step 5: Plot Horizontal Stacked Bar Chart ===
-fig, ax = plt.subplots(figsize=(12, 8))
+fig, ax = plt.subplots(figsize=(16, 10))
 theme_stats.plot(
     kind="barh",
     stacked=True,
@@ -41,20 +50,36 @@ theme_stats.plot(
 )
 
 # Add title and labels
-ax.set_title("Thematic Coverage of Papers", fontsize=16)
-ax.set_xlabel("Number of Papers", fontsize=14)
-ax.set_ylabel("Themes", fontsize=14)
+ax.set_title("Thematic Coverage of Papers", fontsize=TITLE_SIZE, pad=18)
+ax.set_xlabel("Number of Papers", fontsize=AXIS_LABEL_SIZE, labelpad=10)
+ax.set_ylabel("Themes", fontsize=AXIS_LABEL_SIZE, labelpad=10)
 
 # Tick label font sizes
-ax.tick_params(axis="both", labelsize=12)
+ax.set_yticklabels(theme_labels)
+ax.tick_params(axis="both", labelsize=TICK_LABEL_SIZE)
 
 # Legend
 ax.legend(
     title="Addressing Level",
-    fontsize=12,
-    title_fontsize=13,
+    fontsize=LEGEND_SIZE,
+    title_fontsize=LEGEND_SIZE,
     bbox_to_anchor=(1.05, 1),
     loc="upper left"
+)
+
+# Theme key box
+theme_text = "Themes:\n" + "\n".join(
+    [f"{label}: {theme}" for label, theme in theme_mapping.items()]
+)
+ax.text(
+    1.05,
+    0.55,
+    theme_text,
+    transform=ax.transAxes,
+    fontsize=THEME_BOX_SIZE,
+    va="top",
+    ha="left",
+    bbox=dict(boxstyle="round", facecolor="white", edgecolor="lightgray", alpha=0.95)
 )
 
 # === Step 6: Add numbers on bars ===
@@ -69,11 +94,11 @@ for i, (index, row) in enumerate(theme_stats.iterrows()):
                 str(value),
                 va="center",
                 ha="center",
-                fontsize=11,  # <- changed
+                fontsize=BAR_LABEL_SIZE,
                 color="black"
             )
         left += value
 
 plt.tight_layout()
-plt.savefig("theme_coverage", dpi=300)
+plt.savefig("theme_coverage.png", dpi=300, bbox_inches="tight")
 plt.show()

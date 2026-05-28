@@ -1,8 +1,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Optional: global font size
-plt.rcParams.update({"font.size": 12})
+TITLE_SIZE = 20
+AXIS_LABEL_SIZE = 16
+TICK_LABEL_SIZE = 14
+THEME_BOX_SIZE = 16
+POINT_LABEL_SIZE = 13
 
 # Load the CSV file
 df = pd.read_csv("classified_papers_semantic_weighted.csv")
@@ -21,17 +24,18 @@ theme_labels = [f"T{i+1}" for i in range(len(theme_names))]
 theme_mapping = {f"T{i+1}": theme for i, theme in enumerate(theme_names)}
 
 # Plotting
-fig, ax = plt.subplots(figsize=(14, 6))
+fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(theme_labels, average_scores, marker='o', linestyle='-')
 
 # Title and labels
-ax.set_title("Average Theme Scores Across Papers", fontsize=16)
-ax.set_xlabel("Themes", fontsize=14)
-ax.set_ylabel("Average Cosine Similarity Score", fontsize=14)
+ax.set_title("Average Theme Scores Across Papers", fontsize=TITLE_SIZE, pad=18)
+ax.set_xlabel("Themes", fontsize=AXIS_LABEL_SIZE, labelpad=10)
+ax.set_ylabel("Average Cosine Similarity Score", fontsize=AXIS_LABEL_SIZE, labelpad=10)
 
 # Tick label font sizes
-ax.set_xticklabels(theme_labels, rotation=0, ha='center', fontsize=12)
-ax.tick_params(axis='y', labelsize=12)
+ax.set_xticks(range(len(theme_labels)))
+ax.set_xticklabels(theme_labels, rotation=0, ha='center', fontsize=TICK_LABEL_SIZE)
+ax.tick_params(axis='y', labelsize=TICK_LABEL_SIZE)
 
 # Grid
 ax.grid(True)
@@ -44,15 +48,22 @@ for i, score in enumerate(average_scores):
         f"{score:.3f}",
         ha='center',
         va='bottom',
-        fontsize=11
+        fontsize=POINT_LABEL_SIZE
     )
 
 # Add legend on the right
-legend_text = "Theme:\n" + "\n".join([f"{label}: {theme}" for label, theme in theme_mapping.items()])
-ax.text(1.18, 0.5, legend_text, transform=ax.transAxes, fontsize=8, verticalalignment='center',
-        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+legend_text = "Themes:\n" + "\n".join([f"{label}: {theme}" for label, theme in theme_mapping.items()])
+ax.text(
+    1.05,
+    0.5,
+    legend_text,
+    transform=ax.transAxes,
+    fontsize=THEME_BOX_SIZE,
+    verticalalignment='center',
+    bbox=dict(boxstyle='round', facecolor='white', edgecolor='lightgray', alpha=0.95)
+)
 
-plt.tight_layout(rect=[0, 0, 0.75, 1])
-plt.subplots_adjust(left=0.12, right=0.65)
-plt.savefig("average_score_per_theme.png", dpi=300)
+plt.tight_layout()
+plt.subplots_adjust(left=0.12, right=0.58)
+plt.savefig("average_score_per_theme.png", dpi=300, bbox_inches="tight")
 plt.show()
